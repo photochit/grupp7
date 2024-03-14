@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/bootstrap.css">
+    <link rel="stylesheet" href="./src/css/bootstrap-grid.css">
+    <script src="./src/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/app.js" defer></script>
+    
+    <script src="./assets/js/dr-scroll.js" defer></script>
+
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <nav class="nav-bottom-main mb-4 rounded-5 fixed-bottom mx-auto">
+        <div class="d-flex m-2 justify-content-between align-items-center">
+            <div class="dropup ">
+                <button type="button" class="text-uppercase p-2 px-4 btn rounded-5 btn-warning dropdown-toggle"
+                    data-bs-toggle="dropdown">movies</button>
+                <ul class="fd dropdown-menu dm-style text-uppercase">
+                    <li><a class="p-2 px-4 nav-link text-light nav-link-st active" href="#">Movie</a></li>
+                    <li><a class="p-2 px-4 nav-link text-light nav-link-st" href="#">Series</a></li>
+                    <li><a class="p-2 px-4 nav-link text-light nav-link-st" href="#">Music</a></li>
+                </ul>
+            </div>
+            <div class="dropup">
+                <span type="button" class="p-2 dropdown-toggle" data-bs-toggle="dropdown"><img
+                        src="./assets/images/menu-icon.svg" alt=""></span>
+                <ul class="fd dropdown-menu dropdown-menu-end dm-style bt-left-gap text-uppercase">
+                    <li ><a class="p-2 px-4 nav-link text-light nav-link-st" href="#">Profile</a></li>
+                    <li ><a class="p-2 px-4 nav-link text-light nav-link-st" href="#">My Room</a></li>
+                    <li ><a class="p-2 px-4 nav-link text-light nav-link-st" href="#">Review Play</a></li>
+                    <li ><a class="p-2 px-4 nav-link text-light nav-link-st" href="#">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="conteiner-fluid p-3">
+        <div class="d-flex navbar justify-content-between">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./assets/images/logo.svg" alt="Moovie" width="155" height="30">
+            </a>
+            <div class="profile dropdown">
+                <a href=""><img class="rounded-circle border border-3 border-warning" src="./assets/images/user.jpg"
+                        alt="user image" width="40" height="40"></a>
+            </div>
+        </div>
+        <div class="d-flex flex-nowrap mt-2 justify-content-center">
+            <nav class="nav flex-nowrap dr-scroll">
+                <a class="nav-link nav-link-st active p-3 text-light" href="">All</a>
+                <a class="nav-link nav-link-st p-3 text-light" href="">Action</a>
+                <a class="nav-link nav-link-st p-3 text-light" href="">Adventure</a>
+                <a class="nav-link nav-link-st p-3 text-light" href="">Family</a>
+                <a class="nav-link nav-link-st p-3 text-light" href="">SCI-FI</a>
+                <a class="nav-link nav-link-st p-3 text-light" href="">Fantasy</a>
+                <a class="nav-link nav-link-st p-3 text-light" href="">Drama</a>
+                <a class="nav-link nav-link-st p-3 text-light" href="">Comedy</a>
+            </nav>
+        </div>
+    </header>
+    <main class="mb-5">
+        <div class="container">
+            <!-- items gallery -->
+            <div class="d-grid gallery gap-3 mt-5">
+                <!-- item 1 -->
+                <div class="g-col-lg-3 g-col-sm-6 g-col g-col-md-4 rounded-2">
+                    <!-- video and iframe section -->
+                    <div class="video-box">
+                        <figure onclick="triggerBtn(this)" class="img-hover-box">
+                            <img class="hover-img" src="./assets/images/m01.jpg" alt="No Hard Feelings">
+                        </figure>
+                        <iframe class="video-src" width="100%" height="400"
+                            src="https://www.youtube-nocookie.com/embed/P15S6ND8kbQ?si=cmbuKjUtQxq8Vj8b"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <!-- end -->
+                    <!-- Text description  -->
+                    <article class="ma-box row text-secondary p-3">
+                        <header class="d-flex mt-4 align-items-center">
+                            <h2 class="flex-fill text-light">
+                                No Hard Feelings
+                            </h2>
+                            <div class=" rate-box bg-warning justify-content-end p-3">
+                                <p class="fs-1 text-center text-dark mt-2"><span class="rate">6.7</span><span
+                                        class="top-rate">/10</span></p>
+                            </div>
+                        </header>
+
+                        <p class="small text-warning "><span class="year">2023</span> <span class="genre px-2">Comedy,
+                                Romance</span> <span class="duration">1h 43m</span></p>
+                        <p class="description">
+                            On the brink of losing her home, Maddie finds an intriguing job listing: helicopter parents
+                            looking for someone to bring their introverted 19-year-old son out of his shell before
+                            college. She has one summer to make him a man or die trying.
+                        </p>
+                        <p class="director d-flex">
+                            <span class="text-uppercase text-warning" style="width: 100px;">Director</span> <span
+                                class="px-1">Gene
+                                Stupnitsky</span>
+                        </p>
+                        <p class="writers d-flex">
+                            <span class="text-uppercase text-warning" style="width: 100px;">Writers</span> <span
+                                class="px-1">Gene
+                                Stupnitsky</span><span class="px-1">John Phillips</span>
+                        </p>
+                        <p class="stars d-flex">
+                            <span class="text-uppercase text-warning" style="width: 100px;">Stars</span> <span
+                                class="px-1">Jennifer
+                                Lawrence</span><span class="px-1">Andrew Barth Feldman</span>
+                        </p>
+                    </article>
+                    <!-- end -->
+                </div>
+                <!-- end -->
+                <!-- item 2 -->
+                <div class="g-col-lg-3 g-col-sm-6 g-col g-col-md-4 rounded-2 ">
+                    <!-- video and iframe section -->
+                    <div class="video-box">
+                        <figure onclick="triggerBtn(this)" class="img-hover-box">
+                            <img class="hover-img" src="./assets/images/m02.jpg" alt="Blade Runner 2049">
+                        </figure>
+                        <iframe class="video-src" width="100%" height="400"
+                            src="https://www.youtube-nocookie.com/embed/gCcx85zbxz4?si=K60hHgWHM0B3OC6"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <!-- end -->
+                    <!-- Text description  -->
+                    <article class="ma-box row text-secondary p-3">
+                        <header class="d-flex mt-4 align-items-center">
+                            <h2 class="flex-fill text-light">
+                                Blade Runner 2049
+                            </h2>
+                            <div class=" rate-box bg-warning justify-content-end p-3">
+                                <p class="fs-1 text-center text-dark mt-2"><span class="rate">8.0</span><span
+                                        class="top-rate"> /10</span></p>
+                            </div>
+                        </header>
+
+                        <p class="small text-warning "><span class="year">2017</span> <span class="genre px-2">Action,
+                                Drama, Mystery</span> <span class="duration">2h 44m</span></p>
+                        <p class="description">
+                            Young Blade Runner K's discovery of a long-buried secret leads him to track down former
+                            Blade Runner Rick Deckard, who's been missing for thirty years.
+                        </p>
+                        <p class="director d-flex">
+                            <span class="text-uppercase text-warning" style="width: 100px;">Director</span> <span
+                                class="px-1">Denis Villeneuve</span>
+                        </p>
+                        <p class="writers d-flex">
+                            <span class="text-uppercase text-warning" style="width: 100px;">Writers</span> <span
+                                class="px-1">Hampton Fancher</span><span class="px-1">Michael Green</span><span
+                                class="px-1">Philip K. Dick</span>
+                        </p>
+                        <p class="stars d-flex">
+                            <span class="text-uppercase text-warning" style="width: 100px;">Stars</span> <span
+                                class="px-1">Ryan Gosling</span><span class="px-1">Dave Bautista</span><span
+                                class="px-1">Robin Wright</span>
+                        </p>
+                    </article>
+                    <!-- end -->
+                </div>
+                <!-- end -->
+                <!-- item 3 -->
+                <div class="g-col-lg-3 g-col-sm-6 g-col g-col-md-4 rounded-2">
+                    <!-- video and iframe section -->
+                    <div class="video-box">
+                        <figure onclick="triggerBtn(this)" class="img-hover-box">
+                            <img class="hover-img" src="./assets/images/m03.jpg" alt="Spider-Man: No Way Home">
+                        </figure>
+                        <iframe class="video-src" width="100%" height="400"
+                            src="https://www.youtube-nocookie.com/embed/JfVOs4VSpmA?si=i4_AoSf-uOkfkI3F&amp"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <!-- end -->
+                    <!-- Text description  -->
+                    <article class="ma-box row text-secondary p-3">
+                        <header class="d-flex mt-4 align-items-center">
+                            <h2 class="flex-fill text-light">
+                                Spider-Man: No Way Home
+                            </h2>
+                            <div class=" rate-box bg-warning justify-content-end p-3">
+                                <p class="fs-1 text-center text-dark mt-2"><span class="rate">8.2</span><span
+                                        class="top-rate">/10</span></p>
+                            </div>
+                        </header>
+
+                        <p class="small text-warning "><span class="year">2021</span> <span class="genre px-2">Action,
+                                Adventure, Fantasy</span> <span class="duration">1h 43m</span></p>
+                        <p class="description">
+                            With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell
+                            goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what
+                            it truly means to be Spider-Man.
+                        </p>
+                        <p class="director d-flex">
+                            <span class="text-uppercase text-warning" style="width: 100px;">Director</span> <span
+                                class="px-1">Jon Watts</span>
+                        </p>
+                        <p class="writers d-flex">
+                            <span class="text-uppercase text-warning" style="width: 100px;">Writers</span> <span
+                                class="px-1">Chris McKenna</span><span class="px-1">Erik Sommers</span><span
+                                class="px-1">Stan Lee</span><span>Steve Ditko</span>
+                        </p>
+                        <p class="stars d-flex">
+                            <span class="text-uppercase text-warning" style="width: 100px;">Stars</span> <span
+                                class="px-1">Tom Holland</span><span class="px-1">Benedict Cumberbatch</span> <span
+                                class="px-1">Zendaya</span>
+                        </p>
+                    </article>
+                    <!-- end -->
+                </div>
+                <!-- end -->
+                <!-- item 4-->
+                <div class="g-col-lg-3 g-col-sm-6 g-col g-col-md-4 rounded-2">
+                    <!-- video and iframe section -->
+                    <div class="video-box">
+                        <figure onclick="triggerBtn(this)" class="img-hover-box">
+                            <img class="hover-img" src="./assets/images/m04.jpg" alt="Her">
+                        </figure>
+                        <iframe class="video-src" width="100%" height="400"
+                            src="https://www.youtube-nocookie.com/embed/dJTU48_yghs?si=FCAwuuz1fNvF68kH"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <!-- end -->
+                    <!-- Text description  -->
+                    <article class="ma-box row text-secondary p-3">
+                        <header class="d-flex mt-4 align-items-center">
+                            <h2 class="flex-fill text-light">
+                                Her
+                            </h2>
+                            <div class=" rate-box bg-warning justify-content-end p-3">
+                                <p class="fs-1 text-center text-dark mt-2"><span class="rate">8.0</span><span
+                                        class="top-rate">/10</span></p>
+                            </div>
+                        </header>
+
+                        <p class="small text-warning "><span class="year">2013</span> <span class="genre px-2">Drama,
+                                Romance, Sci-Fi</span> <span class="duration">2h 6m</span></p>
+                        <p class="description">
+                            In a near future, a lonely writer develops an unlikely relationship with an operating system
+                            designed to meet his every need.
+                        </p>
+                        <p class="director d-flex">
+                            <span class="text-uppercase text-warning" style="width: 100px;">Director</span> <span
+                                class="px-1">Spike Jonze</span>
+                        </p>
+                        <p class="writers d-flex">
+                            <span class="text-uppercase text-warning" style="width: 100px;">Writers</span> <span
+                                class="px-1">Spike Jonze</span>
+                        </p>
+                        <p class="stars d-flex">
+                            <span class="text-uppercase text-warning" style="width: 100px;">Stars</span> <span
+                                class="px-1">Joaquin Phoenix</span><span class="px-1">Lynn Adrianna Freedman</span>
+                            <span class="px-1">Lisa Renee Pitts</span>
+                        </p>
+                    </article>
+                    <!-- end -->
+                </div>
+                <!-- end -->
+                <!-- item 5 -->
+                <div class="g-col-lg-3 g-col-sm-6 g-col g-col-md-4 rounded-2">
+                    <!-- video and iframe section -->
+                    <div class="video-box">
+                        <figure onclick="triggerBtn(this)" class="img-hover-box">
+                            <img class="hover-img" src="./assets/images/m05.jpg" alt="Creed III">
+                        </figure>
+                        <iframe class="video-src" width="100%" height="400"
+                            src="https://www.youtube-nocookie.com/embed/AHmCH7iB_IM?si=yTM2GqsoPo-kIZL"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <!-- end -->
+                    <!-- Text description  -->
+                    <article class="ma-box row text-secondary p-3">
+                        <header class="d-flex mt-4 align-items-center">
+                            <h2 class="flex-fill text-light">
+                                Creed III
+                            </h2>
+                            <div class=" rate-box bg-warning justify-content-end p-3">
+                                <p class="fs-1 text-center text-dark mt-2"><span class="rate">6.7</span><span
+                                        class="top-rate">/10</span></p>
+                            </div>
+                        </header>
+
+                        <p class="small text-warning "><span class="year">2023</span> <span class="genre px-2">Drama,
+                                Sport</span> <span class="duration">1h 56m</span></p>
+                        <p class="description">
+                            Adonis has been thriving in both his career and family life, but when a childhood friend and former boxing prodigy resurfaces, the face-off is more than just a fight.
+                        </p>
+                        <p class="director d-flex">
+                            <span class="text-uppercase text-warning" style="width: 100px;">Director</span> <span
+                                class="px-1">Michael B. Jordan</span>
+                        </p>
+                        <p class="writers d-flex">
+                            <span class="text-uppercase text-warning" style="width: 100px;">Writers</span> <span
+                                class="px-1">Ryan Coogler</span><span
+                                class="px-1">Keenan Coogler</span><span
+                                class="px-1">Zach Baylin</span>
+                        </p>
+                        <p class="stars d-flex">
+                            <span class="text-uppercase text-warning" style="width: 100px;">Stars</span> <span
+                                class="px-1">Joaquin Phoenix</span><span class="px-1">Lynn Adrianna Freedman</span>
+                            <span class="px-1">Lisa Renee Pitts</span>
+                        </p>
+                    </article>
+                    <!-- end -->
+                </div>
+                <!-- end -->
+                <!-- item 6 -->
+                <div class="g-col-lg-3 g-col-sm-6 g-col g-col-md-4 rounded-2">
+                    <!-- video and iframe section -->
+                    <div class="video-box">
+                        <figure onclick="triggerBtn(this)" class="img-hover-box">
+                            <img class="hover-img" src="./assets/images/m06.jpg" alt="John Wick">
+                        </figure>
+                        <iframe class="video-src" width="100%" height="400"
+                            src="https://www.youtube-nocookie.com/embed/C0BMx-qxsP4?si=b39WBDOQkmQ4ZA1Q"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <!-- end -->
+                    <!-- Text description  -->
+                    <article class="ma-box row text-secondary p-3">
+                        <header class="d-flex mt-4 align-items-center">
+                            <h2 class="flex-fill text-light">
+                                John Wick
+                            </h2>
+                            <div class=" rate-box bg-warning justify-content-end p-3">
+                                <p class="fs-1 text-center text-dark mt-2"><span class="rate">7.4</span><span
+                                        class="top-rate">/10</span></p>
+                            </div>
+                        </header>
+
+                        <p class="small text-warning "><span class="year">2014</span> <span class="genre px-2">Action,
+                                Crime, Triller</span> <span class="duration">1h 41m</span></p>
+                        <p class="description">
+                            Adonis has been thriving in both his career and family life, but when a childhood friend and former boxing prodigy resurfaces, the face-off is more than just a fight.
+                        </p>
+                        <p class="director d-flex">
+                            <span class="text-uppercase text-warning" style="width: 100px;">Director</span> <span
+                                class="px-1">Michael B. Jordan</span>
+                        </p>
+                        <p class="writers d-flex">
+                            <span class="text-uppercase text-warning" style="width: 100px;">Writers</span> <span
+                                class="px-1">Ryan Coogler</span><span
+                                class="px-1">Keenan Coogler</span><span
+                                class="px-1">Zach Baylin</span>
+                        </p>
+                        <p class="stars d-flex">
+                            <span class="text-uppercase text-warning" style="width: 100px;">Stars</span> <span
+                                class="px-1">Joaquin Phoenix</span><span class="px-1">Lynn Adrianna Freedman</span>
+                            <span class="px-1">Lisa Renee Pitts</span>
+                        </p>
+                    </article>
+                    <!-- end -->
+                </div>
+                <!-- end -->
+                <!-- item 7 -->
+                <div class="g-col-lg-3 g-col-sm-6 g-col g-col-md-4 rounded-2">
+                    <!-- video and iframe section -->
+                    <div class="video-box">
+                        <figure onclick="triggerBtn(this)" class="img-hover-box">
+                            <img class="hover-img" src="./assets/images/m07.jpg" alt="John Wick">
+                        </figure>
+                        <iframe class="video-src" width="100%" height="400"
+                            src="https://www.youtube-nocookie.com/embed/C0BMx-qxsP4?si=b39WBDOQkmQ4ZA1Q"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <!-- end -->
+                    <!-- Text description  -->
+                    <article class="ma-box d-flex flex-column row text-secondary p-3">
+                        <header class="d-flex mt-4 align-items-center">
+                            <h2 class="flex-fill text-light">
+                                John Wick
+                            </h2>
+                            <div class=" rate-box bg-warning justify-content-end p-3">
+                                <p class="fs-1 text-center text-dark mt-2"><span class="rate">7.4</span><span
+                                        class="top-rate">/10</span></p>
+                            </div>
+                        </header>
+
+                        <p class="small text-warning "><span class="year">2014</span> <span class="genre px-2">Action,
+                                Crime, Triller</span> <span class="duration">1h 41m</span></p>
+                        <p class="description">
+                            Adonis has been thriving in both his career and family life, but when a childhood friend and former boxing prodigy resurfaces, the face-off is more than just a fight.
+                        </p>
+                        <p class="director d-flex">
+                            <span class="text-uppercase text-warning" style="width: 100px;">Director</span> <span
+                                class="px-1">Michael B. Jordan</span>
+                        </p>
+                        <p class="writers d-flex">
+                            <span class="text-uppercase text-warning" style="width: 100px;">Writers</span> <span
+                                class="px-1">Ryan Coogler</span><span
+                                class="px-1">Keenan Coogler</span><span
+                                class="px-1">Zach Baylin</span>
+                        </p>
+                        <p class="stars d-flex">
+                            <span class="text-uppercase text-warning" style="width: 100px;">Stars</span> <span
+                                class="px-1">Joaquin Phoenix</span><span class="px-1">Lynn Adrianna Freedman</span>
+                            <span class="px-1">Lisa Renee Pitts</span>
+                        </p>
+                    </article>
+                    <!-- end -->
+                </div>
+                <!-- end -->
+            </div>
+        </div>
+    </main>
+    <footer class="container mt-2 p-2">
+        <p class="smal">
+            Copyright © 2024, Ilya & Company 
+        </p>
+    </footer>
+</body>
+
+</html>

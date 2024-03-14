@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/bootstrap.css">
+    <link rel="stylesheet" href="./src/css/bootstrap-grid.css">
+    <script src="./src/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/app.js" defer></script>
+    <script src="./assets/js/dr-scroll.js" defer></script>
+
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <nav class="nav-bottom-main mb-4 rounded-5 fixed-bottom mx-3">
+
+        <div class="d-flex m-2 justify-content-between align-items-center">
+            <div class="dropup ">
+                <button type="button" class="text-uppercase p-2 px-4 btn rounded-5 btn-warning dropdown-toggle"
+                    data-bs-toggle="dropdown">Profile</button>
+                <ul class="fd dropdown-menu dm-style text-uppercase">
+                    <li><a class="p-2 px-4 nav-link text-light nav-link-st" href="#">Movie</a></li>
+                    <li><a class="p-2 px-4 nav-link text-light nav-link-st" href="#">Series</a></li>
+                    <li><a class="p-2 px-4 nav-link text-light nav-link-st" href="#">Music</a></li>
+                </ul>
+            </div>
+            <div class="dropup">
+                <span type="button" class="p-2 dropdown-toggle" data-bs-toggle="dropdown"><img
+                        src="./assets/images/menu-icon.svg" alt=""></span>
+                <ul class="fd dropdown-menu dropdown-menu-end dm-style bt-left-gap text-uppercase">
+                    <li><a class="p-2 px-4 nav-link text-light nav-link-st active" href="#">Profile</a></li>
+                    <li><a class="p-2 px-4 nav-link text-light nav-link-st " href="#">My Room</a></li>
+                    <li><a class="p-2 px-4 nav-link text-light nav-link-st" href="#">Review Play</a></li>
+                    <li><a class="p-2 px-4 nav-link text-light nav-link-st" href="#">Log Out</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <header class="conteiner-fluid p-3">
+        <div class="d-flex navbar justify-content-between">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./assets/images/logo.svg" alt="Moovie" width="155" height="30">
+            </a>
+        </div>
+    </header>
+    <main class="mb-5">
+        <section class="container-fluid">
+            <header class="row">
+                </head>
+                <h1 class="text-light">
+                    Profile dashboard
+                </h1>
+            </header>
+            <div class="d-flex flex-wrap gap-1">
+                <div class=" profile-row p-2" style="width:240px;">
+                    <div class="row  mb-4 img-profile-box">
+                        <figure class="flex-fill">
+                            <img class="w-100 rounded-2" src="./assets/images/user.jpg" alt="User name ">
+                        </figure>
+                        <div class="m-3 flex-fill text-center">
+                            <label class="btn btn-warning" for="formFile" class="form-label text-light">Change
+                                image</label>
+                            <input class="form-control img-upload" type="file" id="formFile">
+                        </div>
+                    </div>
+                    <div class="row profile-data">
+                        <form action="" method="post">
+                            <div class="form-floating mb-3 pr-form-style">
+                                <input type="email" class="form-control fs-4" id="nickname"
+                                   value="Hereminus">
+                                <label class="text-warning" for="nickname">Nickname</label>
+                            </div>
+                            <div class="form-floating mb-3 pr-form-style">
+                                <input type="text" class="form-control fs-4" name="name" id="Name"
+                                    value="Marina Posin">
+                                <label class="text-warning" for="Name">Full Name</label>
+                            </div>
+                            
+                            <div class="form-floating pr-form-style mb-3">
+                                <input type="email" class="form-control fs-4" name="email" id="Email" value="info@gmail.com">
+                                <label class="text-warning" for="Email">Email address</label>
+                            </div>
+                            <div class="mt-5">
+                                <button type="submit" class="btn btn-warning">Save changes</button>
+                              </div>
+                            
+                        </form>
+                    </div>
+                </div>
+                <div class="post-row flex-fill p-4">
+                    <h2 class="text-center text-warning">Add post for Review</h2>
+                </div>
+                <div class="history-row flex-fill p-2">
+                    <h2 class="text-center text-warning">History</h2>
+                    <article>
+                        
+                    </article>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <footer class="hidde-mobile text-end container mt-2 p-2 fixed-bottom">
+        <p class="smal">
+            Copyright © 2024, Ilya & Company
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/bootstrap.css">
+    <link rel="stylesheet" href="./src/css/bootstrap-grid.css">
+    <script src="./src/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/app.js" defer></script>
+    <script src="./assets/js/dr-scroll.js" defer></script>
+    <script src="./assets/js/slide.js" defer></script>
+
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+
+<body style="overflow: hidden;">
+    <nav class="mx-auto fixed-bottom d-flex justify-content-center align-items-center control-btn-box">
+        <button class="btn border-1 btn-style btn-l m-2 fs-3 rounded-1">L</button>
+        <button class="btn border-1 btn-style btn-l-arr m-2 fs-1 rounded-1"><</button>
+        <button class="btn border-1 btn-style btn-r-arr m-2 fs-1 rounded-1">></button>
+        <button class="btn border-1 btn-style btn-d m-2 fs-3 rounded-1">D</button>
+    </nav>
+    <nav class="nav-bottom-main mb-4 rounded-5 fixed-bottom mx-auto">
+        <div class="d-flex m-2 justify-content-between align-items-center">
+            <div class="dropup ">
+                <button type="button" class="text-uppercase p-2 px-4 btn rounded-5 btn-warning dropdown-toggle"
+                    data-bs-toggle="dropdown">My room</button>
+                <ul class="fd dropdown-menu dm-style text-uppercase">
+                    <li><a class="p-2 px-4 nav-link text-light nav-link-st" href="#">Movie</a></li>
+                    <li><a class="p-2 px-4 nav-link text-light nav-link-st" href="#">Series</a></li>
+                    <li><a class="p-2 px-4 nav-link text-light nav-link-st" href="#">Music</a></li>
+                </ul>
+            </div>
+            <div class="dropup">
+                <span type="button" class="p-2 dropdown-toggle" data-bs-toggle="dropdown"><img
+                        src="./assets/images/menu-icon.svg" alt=""></span>
+                <ul class="fd dropdown-menu dropdown-menu-end dm-style bt-left-gap text-uppercase">
+                    <li><a class="p-2 px-4 nav-link text-light nav-link-st" href="#">Profile</a></li>
+                    <li><a class="p-2 px-4 nav-link text-light nav-link-st active" href="#">My Room</a></li>
+                    <li><a class="p-2 px-4 nav-link text-light nav-link-st" href="#">Review Play</a></li>
+                    <li><a class="p-2 px-4 nav-link text-light nav-link-st" href="#">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="conteiner-fluid p-3">
+        <div class="d-flex navbar justify-content-between">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./assets/images/logo.svg" alt="Moovie" width="155" height="30">
+            </a>
+            <div class="profile dropdown">
+                <a href=""><img class="rounded-circle border border-3 border-warning" src="./assets/images/user.jpg"
+                        alt="user image" width="40" height="40"></a>
+            </div>
+        </div>
+        <div class="d-flex flex-nowrap mt-2 justify-content-center">
+            <nav class="nav">
+                <a class="fs-3 mx-2 nav-link nav-pill-st active p-2 px-3  rounded-2" href="">Music</a>
+                <a class="fs-3 mx-2 nav-link nav-pill-st p-2 rounded-2" href="">Series</a>
+                <a class="fs-3 mx-2 nav-link nav-pill-st p-2 rounded-2" href="">Movie</a>
+            </nav>
+        </div>
+        <div class="d-flex  flex-nowrap mt-2 justify-content-center">
+            <nav class="nav flex-nowrap dr-scroll">
+                <a class="nav-link nav-link-st active p-3 text-light" href="">All</a>
+                <a class="nav-link nav-link-st p-3 text-light" href="">Action</a>
+                <a class="nav-link nav-link-st p-3 text-light" href="">Adventure</a>
+                <a class="nav-link nav-link-st p-3 text-light" href="">Family</a>
+                <a class="nav-link nav-link-st p-3 text-light" href="">SCI fiction</a>
+                <a class="nav-link nav-link-st p-3 text-light" href="">Fantasy</a>
+                <a class="nav-link nav-link-st p-3 text-light" href="">Drama</a>
+                <a class="nav-link nav-link-st p-3 text-light" href="">Comedy</a>
+            </nav>
+        </div>
+    </header>
+    <main class="mb-5">
+        <div class="container">
+            <!-- carousel container  -->
+            <div class="d-flex slider-wrap flex-nowrap align-items-center gap-2">
+                <!--slide item   -->
+                <div class="slideitem rounded-2">
+                    <!-- slide img  -->
+                    <figure class="slide-img">
+                        <img class="rounded-2" src="./assets/images/m01.jpg" alt="">
+                    </figure>
+                    <!-- end -->
+                    <!-- slide-info with additinal buttons -->
+                    <div class="slide-info">
+                        <p class="fs-2 p-1 px-3 text-center text-dark bg-warning mt-2 rounded-2"><span class="rate">RATE
+                                7.4</span></p>
+                    </div>
+                    <!-- end -->
+                </div>
+                <!-- end -->
+                <!--slide item   -->
+                <div class="slideitem rounded-2">
+                    <!-- slide img  -->
+                    <figure class="slide-img">
+                        <img class="rounded-2" src="./assets/images/m02.jpg" alt="">
+                    </figure>
+                    <!-- end -->
+                    <!-- slide-info with additinal buttons -->
+                    <div class="slide-info">
+                        <p class="fs-2 p-1 px-3 text-center text-dark bg-warning mt-2 rounded-2"><span class="rate">RATE
+                                7.4</span></p>
+                    </div>
+                    <!-- end -->
+                </div>
+                <!-- end -->
+                <!--slide item   -->
+                <div class="slideitem rounded-2">
+                    <!-- slide img  -->
+                    <figure class="slide-img">
+                        <img class="rounded-2" src="./assets/images/m03.jpg" alt="">
+                    </figure>
+                    <!-- end -->
+                    <!-- slide-info with additinal buttons -->
+                    <div class="slide-info">
+                        <p class="fs-2 p-1 px-3 text-center text-dark bg-warning mt-2 rounded-2"><span class="rate">RATE
+                                7.4</span></p>
+                    </div>
+                    <!-- end -->
+                </div>
+                <!-- end -->
+                <!--slide item   -->
+                <div class="slideitem rounded-2">
+                    <!-- slide img  -->
+                    <figure class="slide-img">
+                        <img class="rounded-2" src="./assets/images/m04.jpg" alt="">
+                    </figure>
+                    <!-- end -->
+                    <!-- slide-info with additinal buttons -->
+                    <div class="slide-info">
+                        <p class="fs-2 p-1 px-3 text-center text-dark bg-warning mt-2 rounded-2"><span class="rate">RATE
+                                7.4</span></p>
+                    </div>
+                    <!-- end -->
+                </div>
+                <!-- end -->
+                <!--slide item   -->
+                <div class="slideitem rounded-2">
+                    <!-- slide img  -->
+                    <figure class="slide-img">
+                        <img class="rounded-2" src="./assets/images/m05.jpg" alt="">
+                    </figure>
+                    <!-- end -->
+                    <!-- slide-info with additinal buttons -->
+                    <div class="slide-info">
+                        <p class="fs-2 p-1 px-3 text-center text-dark bg-warning mt-2 rounded-2"><span class="rate">RATE
+                                7.4</span></p>
+                    </div>
+                    <!-- end -->
+                </div>
+                <!-- end -->
+                <!--slide item   -->
+                <div class="slideitem rounded-2">
+                    <!-- slide img  -->
+                    <figure class="slide-img">
+                        <img class="rounded-2" src="./assets/images/m06.jpg" alt="">
+                    </figure>
+                    <!-- end -->
+                    <!-- slide-info with additinal buttons -->
+                    <div class="slide-info">
+                        <p class="fs-2 p-1 px-3 text-center text-dark bg-warning mt-2 rounded-2"><span class="rate">RATE
+                                7.4</span></p>
+                    </div>
+                    <!-- end -->
+                </div>
+                <!-- end -->
+                <!--slide item   -->
+                <div class="slideitem rounded-2">
+                    <!-- slide img  -->
+                    <figure class="slide-img">
+                        <img class="rounded-2" src="./assets/images/m07.jpg" alt="">
+                    </figure>
+                    <!-- end -->
+                    <!-- slide-info with additinal buttons -->
+                    <div class="slide-info">
+                        <p class="fs-2 p-1 px-3 text-center text-dark bg-warning mt-2 rounded-2"><span class="rate">RATE
+                                7.4</span></p>
+                    </div>
+                    <!-- end -->
+                </div>
+                <!-- end -->
+                <!--slide item   -->
+                <div class="slideitem rounded-2">
+                    <!-- slide img  -->
+                    <figure class="slide-img">
+                        <img class="rounded-2" src="./assets/images/m08.jpg" alt="">
+                    </figure>
+                    <!-- end -->
+                    <!-- slide-info with additinal buttons -->
+                    <div class="slide-info">
+                        <p class="fs-2 p-1 px-3 text-center text-dark bg-warning mt-2 rounded-2"><span class="rate">RATE
+                                7.4</span></p>
+                    </div>
+                    <!-- end -->
+                </div>
+                <!-- end -->
+            </div>
+            <!-- END -->
+            <!-- description fixed-bottom -->
+            <div class="slite_items_d mt-5">
+                <!-- slide description -->
+                <div class="item_d ">
+                    <h2 class="flex-fill text-light">
+                        No Hard Feelings
+                    </h2>
+                    <p class="small text-warning "><span class="year">2023</span> <span class="genre px-2">Comedy,
+                        Romance</span> <span class="duration">1h 43m</span></p>
+                </div>
+                <!-- end -->
+                <!-- slide description -->
+                <div class="item_d">
+                    <h2 class="flex-fill text-light">
+                        Blade Runner 2049
+                    </h2>
+                    <p class="small text-warning "><span class="year">2017</span> <span class="genre px-2">Action,
+                        Drama, Mystery</span> <span class="duration">2h 44m</span></p>
+                </div>
+                <!-- end -->
+                <!-- slide description -->
+                <div class="item_d">
+                    <h2 class="flex-fill text-light">
+                        Spider-Man: No Way Home
+                    </h2>
+                    <p class="small text-warning "><span class="year">2021</span> <span class="genre px-2">Action,
+                        Adventure, Fantasy</span> <span class="duration">1h 43m</span></p>
+                </div>
+                <!-- end -->
+                <!-- slide description -->
+                <div class="item_d">
+                    <h2 class="flex-fill text-light">
+                        Her
+                    </h2>
+                    <p class="small text-warning "><span class="year">2013</span> <span class="genre px-2">Drama,
+                        Romance, Sci-Fi</span> <span class="duration">2h 6m</span></p>
+                </div>
+                <!-- end -->
+                <!-- slide description -->
+                <div class="item_d">
+                    <h2 class="flex-fill text-light">
+                        Creed III
+                    </h2>
+                    <p class="small text-warning "><span class="year">2023</span> <span class="genre px-2">Drama,
+                        Sport</span> <span class="duration">1h 56m</span></p>
+             
+                </div>
+                <!-- end -->
+                 <!-- slide description -->
+                 <div class="item_d">
+                    <h2 class="flex-fill text-light">
+                        John Wick
+                    </h2>
+                    <p class="small text-warning "><span class="year">2014</span> <span class="genre px-2">Action,
+                        Crime, Triller</span> <span class="duration">1h 41m</span></p>
+                    </p>
+                </div>
+                <!-- end -->
+                 <!-- slide description -->
+                 <div class="item_d">
+                    <h2 class="flex-fill text-light">
+                        Doctor Strange in the Multiverse of Madness
+                    </h2>
+                    <p class="small text-warning ">
+                        <span class="year">2022</span> 
+                        <span class="genre px-2">Action, Adventure, Fantasy</span> 
+                        <span class="duration">1h 41m</span>
+                    </p>
+                </div>
+                <!-- end -->
+                 <!-- slide description -->
+                 <div class="item_d">
+                    <h2 class="flex-fill text-light">
+                        Ant-Man and the Wasp
+                    </h2>
+                    <p class="small text-warning ">
+                        <span class="year">2018</span> 
+                        <span class="genre px-2">Action, Adventure, Fantasy</span> 
+                        <span class="duration">1h 58m</span>
+                    </p>
+                </div>
+                <!-- end -->
+            </div>
+        </div>
+    </main>
+    <footer class="hidde-mobile  text-end container mt-2 p-2 fixed-bottom">
+        <p class="smal">
+            Copyright © 2024, Ilya & Company
+        </p>
+    </footer>
+</body>
+
+</html>
